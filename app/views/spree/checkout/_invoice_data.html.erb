@@ -1,0 +1,13 @@
+<%= label_tag :receive_invice %>
+<%= check_box_tag :receive_invice %>
+<%= form.fields_for :bill_address do |bill_form| %>
+  <p class="field" id="company_name">
+    <%= bill_form.label :company %>
+    <%= bill_form.text_field :company %>
+  </p>
+
+  <p class="field" id="company_name">
+    <%= bill_form.label :vatin %>
+    <%= bill_form.text_field :company %>
+  </p>
+<% end %>
