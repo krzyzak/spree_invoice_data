@@ -1,0 +1,6 @@
+en:
+  spree:
+    spree_invoice_data:
+      receive_invoice: "Receive invoice"
+      company: "Company name"
+      vatin: "VAT Identification Number"

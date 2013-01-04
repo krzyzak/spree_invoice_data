@@ -1,0 +1,6 @@
+pl:
+  spree:
+    spree_invoice_data:
+      receive_invoice: "Chcę otrzymać fakturę"
+      company: "Nazwa firmy"
+      vatin: "NIP"
