@@ -1,13 +1,15 @@
 <%= label_tag :receive_invice, t("spree.spree_invoice_data.receive_invoice") %>
 <%= check_box_tag :receive_invice %>
-<%= form.fields_for :bill_address do |bill_form| %>
-  <p class="field" id="company_name">
-    <%= bill_form.label :company %><span class="required">*</span><br/>
-    <%= bill_form.text_field :company %>
-  </p>
+<div id="invoice_data">
+  <%= form.fields_for :bill_address do |bill_form| %>
+    <p class="field" id="company_name">
+      <%= bill_form.label :company, t("spree.spree_invoice_data.company") %><span class="required">*</span><br/>
+      <%= bill_form.text_field :company %>
+    </p>
 
-  <p class="field" id="company_name">
-    <%= bill_form.label :vatin, t("spree.spree_invoice_data.vatin") %><span class="required">*</span><br/>
-    <%= bill_form.text_field :vatin %>
-  </p>
-<% end %>
+    <p class="field" id="company_name">
+      <%= bill_form.label :vatin, t("spree.spree_invoice_data.vatin") %><span class="required">*</span><br/>
+      <%= bill_form.text_field :vatin, class: "required" %>
+    </p>
+  <% end %>
+</div>
